@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#00668a", "error-container": "#450a0a", "on-secondary-fixed": "#002113", "primary-fixed-dim": "#7bd0ff", "surface-container-high": "#262a35", "secondary-fixed-dim": "#4edea3", "surface-container-highest": "#313540", "on-error": "#ffffff", "secondary": "#4edea3", "surface-container": "#151b28", "on-tertiary-fixed": "#2a1700", "primary-container": "#0284c7", "on-tertiary-container": "#ffedd5", "surface-container-low": "#101622", "tertiary-fixed-dim": "#ffb95f", "tertiary-container": "#f59e0b", "primary-fixed": "#c4e7ff", "on-tertiary": "#472a00", "outline-variant": "#2a3447", "secondary-container": "#064e3b", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#653e00", "inverse-surface": "#dfe2f1", "on-primary-container": "#e0f2fe", "surface": "#0B0F19", "on-secondary": "#003824", "background": "#0B0F19", "on-secondary-container": "#6ee7b7", "on-primary-fixed-variant": "#004c69", "surface-bright": "#1e293b", "on-secondary-fixed-variant": "#005236", "surface-dim": "#0B0F19", "surface-container-lowest": "#070b13", "on-background": "#e2e8f0", "primary": "#38bdf8", "surface-tint": "#7bd0ff", "on-primary-fixed": "#001e2c", "surface-variant": "#1e293b", "on-surface": "#f1f5f9", "secondary-fixed": "#6ffbbe", "outline": "#475569", "error": "#f43f5e", "on-surface-variant": "#94a3b8", "on-error-container": "#fecdd3", "inverse-on-surface": "#0f172a", "on-primary": "#00354a", "tertiary": "#fbbf24" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-md": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem" }, fontFamily: { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "data-metric": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "data-metric": ["28px", { "lineHeight": "32px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-[#0B0F19] text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-rose-500/30 selection:text-rose-200"><header class="fixed top-0 w-full z-50 bg-[#0B0F19]/80 backdrop-blur-xl border-b border-slate-800/80 shadow-[0_4px_20px_rgba(0,0,0,0.5)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="h-9 w-9 rounded-xl bg-sky-500/10 border border-sky-400/20 flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(56,189,248,0.15)]"><img alt="AttendWise Logo" class="h-full w-auto object-contain brightness-125" src="https://lh3.googleusercontent.com/aida/AEtjO1XAnpTz4Ts9v41ttplWxhVi8MDpfhHmjTqmYosjj2MXRMjARrrjCKMMkUaa_icvJ7yofG6Fxa2G1nkoRlx1fKs_B0Zr7DQK5uFS7JkKGFtOxX0QQQVyQ33FdKmwCK0Y93YTBB_TjoOgq4wkP_YB15XNGxwt0ernoJtgyPk33-XX4JoUNDMUp85qQ1Qw28FAk-aA32ZEh1Qfj83iwqIwvP0EI0UUubp-dTBPTKwiC4MB"/></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight font-bold">AttendWise</span><span class="font-label-sm text-label-sm text-slate-400 font-medium tracking-wide">Late-Night Analytics</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900 border border-slate-700/60 text-emerald-400 shadow-inner"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span><span class="font-label-sm text-label-sm whitespace-nowrap text-slate-300 font-medium">Sem 4 • Fall 2024</span></div><button aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full ring-1 ring-sky-500/30 hover:ring-sky-400 transition-all hover:bg-slate-800"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-slate-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqxeLWuPyYuZqwHW1xy7ugSXAjMbORpHkXs0wgVChAkOCjf720I-bfCWHXXJ5wNq3x77STQFoiXRo1_qpUrlE6b4K0rjgCXHF7x357hL3sGPVRbpFe18YvvJA1-WTy8yIufE6YFkfgs53ZokhjyiAqeSo-9Q7JILZisD27xXD-DsP2OuZuCcMro4_YZH3nl0ZC1CuW16jtUZ6lE2UVZsJNw6t3LR7y55p6NT5260I"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-[#0B0F19] min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive & Alert Hero Section -->
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Urgent Floating Status Alert Banner - Neon Crimson Dark Mode -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-rose-950/90 via-[#2a060c] to-[#1a0509] text-rose-100 p-space-md shadow-[0_0_25px_rgba(244,63,94,0.25)] border border-rose-500/40 flex items-start gap-space-sm backdrop-blur-md">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-rose-600/10 blur-xl pointer-events-none"></div>
+<div class="p-1.5 rounded-lg bg-rose-500/20 border border-rose-500/40 shadow-[0_0_12px_rgba(244,63,94,0.5)] shrink-0">
+<span class="material-symbols-outlined text-[24px] text-rose-400 block animate-bounce" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm tracking-tight font-extrabold uppercase text-rose-200 drop-shadow-[0_0_8px_rgba(244,63,94,0.6)]">Debarment Risk</span>
+<span class="px-2 py-0.5 rounded-full bg-rose-500 text-white font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-[0_0_10px_rgba(244,63,94,0.8)] animate-pulse">Action Required</span>
+</div>
+<p class="font-body-md text-body-md mt-1 leading-snug font-medium text-rose-200/90">
+          74.2% Attendance (Below 75% Statutory Limit) — Hall ticket holds will trigger in 4 days!
+        </p>
+</div>
+</div>
+<!-- Main Gauge Card with Neon Glow -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-lg shadow-[0_8px_30px_rgba(0,0,0,0.5)] flex flex-col items-center relative overflow-hidden backdrop-blur-sm">
+<div class="absolute inset-0 bg-radial-gradient from-rose-500/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="w-full flex items-center justify-between pb-space-sm relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-[0_0_8px_#f43f5e] animate-ping"></span>
+<span class="font-label-lg text-label-lg text-slate-200 font-semibold">Term Aggregate</span>
+</div>
+<button aria-label="Refresh Metric" class="flex items-center gap-1.5 text-slate-300 hover:text-sky-300 transition-all py-1.5 px-2.5 rounded-lg bg-slate-800/90 border border-slate-700 hover:border-sky-500/50 hover:shadow-[0_0_10px_rgba(56,189,248,0.2)]" id="refreshGaugeBtn">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="font-label-sm text-label-sm font-medium">Live Sync</span>
+</button>
+</div>
+<!-- Circular SVG Radial Gauge with Dark Glowing Arc -->
+<div class="relative flex items-center justify-center my-space-md">
+<svg class="w-48 h-48 transform -rotate-90 filter drop-shadow-[0_0_14px_rgba(244,63,94,0.45)]" viewbox="0 0 160 160">
+<!-- Background track -->
+<circle class="text-slate-800/90" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="12"></circle>
+<!-- 75% Benchmark marker tick (270 degrees equivalent arc) -->
+<circle class="text-sky-400/80 z-10" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-dasharray="3 424" stroke-dashoffset="-320" stroke-width="14"></circle>
+<!-- Animated Danger progress arc: 74.2% = 0.742 * (2 * PI * 68) = 317 dashlength out of 427 -->
+<circle class="text-rose-500 transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" id="gaugeProgressArc" r="68" stroke="currentColor" stroke-dasharray="427" stroke-dashoffset="110" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-data-metric text-data-metric text-rose-400 tracking-tight font-extrabold drop-shadow-[0_0_12px_rgba(244,63,94,0.7)]">74.2%</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-rose-200 bg-rose-950/80 border border-rose-500/40 px-2 py-0.5 rounded-full mt-0.5 shadow-[0_0_8px_rgba(244,63,94,0.3)]">Critical Sub-Floor</span>
+<span class="font-body-sm text-body-sm text-slate-400 mt-1 font-medium">126 of 170 Attended</span>
+</div>
+</div>
+<!-- Quick Context Micro Pills in Dark Mode -->
+<div class="w-full grid grid-cols-2 gap-space-sm pt-space-xs relative z-10">
+<div class="rounded-xl bg-[#0B0F19] border border-slate-800/80 p-2.5 flex items-center gap-space-xs shadow-inner">
+<div class="w-8 h-8 rounded-lg bg-rose-500/10 border border-rose-500/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-rose-400 text-[18px]">cancel_presentation</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-slate-400">Unexcused Misses</span>
+<span class="font-title-md text-title-md text-slate-100 leading-tight font-bold">44 Sessions</span>
+</div>
+</div>
+<div class="rounded-xl bg-[#0B0F19] border border-slate-800/80 p-2.5 flex items-center gap-space-xs shadow-inner">
+<div class="w-8 h-8 rounded-lg bg-rose-500/10 border border-rose-500/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-rose-400 text-[18px]">flag</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-slate-400">75% Target Deficit</span>
+<span class="font-title-md text-title-md text-rose-400 leading-tight font-bold drop-shadow-[0_0_6px_rgba(244,63,94,0.4)]">-2 Lectures</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Smart Bunk / Target Calculator Predictor (Deep Midnight Navy with Luminescent Typography) -->
+<div class="rounded-xl bg-gradient-to-br from-[#0c1e3d] via-[#09152b] to-[#060e1d] text-white p-space-md shadow-[0_8px_30px_rgba(14,165,233,0.15)] border border-sky-500/30 relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-sky-500/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center shadow-[0_0_12px_rgba(56,189,248,0.3)]">
+<span class="material-symbols-outlined text-sky-300 text-[20px]">calculate</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-white font-bold tracking-tight">Attendance Predictor</h2>
+<span class="font-body-sm text-body-sm text-sky-200/80">Recovery strategy simulation</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-label-sm text-label-sm font-semibold shadow-[0_0_8px_rgba(52,211,153,0.25)]">High Priority</span>
+</div>
+<div class="mt-space-md p-space-sm rounded-xl bg-slate-900/80 border border-sky-500/20 flex items-center gap-space-md relative z-10 shadow-inner">
+<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-sky-400 text-slate-950 shrink-0 font-extrabold shadow-[0_0_16px_rgba(56,189,248,0.6)]">
+<span class="font-data-metric text-data-metric leading-none">5</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-sky-100 font-bold">Attend next 5 consecutive lectures</span>
+<span class="font-body-sm text-body-sm text-slate-300 mt-0.5">Will safely raise total to <strong class="text-emerald-300 drop-shadow-[0_0_6px_rgba(52,211,153,0.5)]">75.6%</strong> before end-term audits. Zero bunks permissible!</span>
+</div>
+</div>
+<!-- Interactive Simulation Slider with Neon Glow -->
+<div class="mt-space-md flex flex-col gap-1.5 relative z-10">
+<div class="flex justify-between items-center text-sky-200/90 font-label-sm text-label-sm">
+<span>Simulate skipping next lectures:</span>
+<span class="font-bold text-white bg-sky-950/80 px-2 py-0.5 rounded border border-sky-500/30" id="sliderValueText">0 classes missed</span>
+</div>
+<input class="w-full accent-sky-400 cursor-pointer h-2 bg-slate-800 rounded-lg border border-slate-700/80" id="simSlider" max="4" min="0" step="1" type="range" value="0"/>
+<div class="text-right font-label-sm text-label-sm text-emerald-400 font-semibold drop-shadow-[0_0_6px_rgba(52,211,153,0.4)]" id="simFeedback">
+          Safe window: 0 skips remaining
+        </div>
+</div>
+</div>
+<!-- Attendance Policy Criteria Matrix (Visual Tiers Reference) -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-md shadow-sm flex flex-col gap-space-sm backdrop-blur-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-slate-300 text-[20px]">policy</span>
+<h2 class="font-title-md text-title-md text-slate-100 font-bold">Institutional Thresholds</h2>
+</div>
+<span class="font-label-sm text-label-sm text-slate-400 font-medium font-mono">Regulation 14.B</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<!-- 90 - 100% -->
+<div class="p-2.5 rounded-lg bg-[#0B0F19] border border-slate-800/80 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399] shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-slate-200 font-semibold">90% – 100%</span>
+<span class="font-body-sm text-body-sm text-slate-400">Safe &amp; Distinction Qualified</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-label-sm text-label-sm font-semibold">Good</span>
+</div>
+<!-- 80 - 89.9% -->
+<div class="p-2.5 rounded-lg bg-[#0B0F19] border border-slate-800/80 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24] shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-slate-200 font-semibold">80% – 89.9%</span>
+<span class="font-body-sm text-body-sm text-slate-400">Warning • Mild Buffer Zone</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 font-label-sm text-label-sm font-semibold">Buffer Zone</span>
+</div>
+<!-- 75.1 - 79.9% -->
+<div class="p-2.5 rounded-lg bg-[#0B0F19] border border-slate-800/80 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-rose-400 shadow-[0_0_8px_#f43f5e] shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-slate-200 font-semibold">75.1% – 79.9%</span>
+<span class="font-body-sm text-body-sm text-slate-400">Critical • Below 80% Advisory</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-rose-950/80 border border-rose-500/40 text-rose-300 font-label-sm text-label-sm font-semibold">Critical</span>
+</div>
+<!-- <= 75% -->
+<div class="p-2.5 rounded-lg bg-rose-950/40 border border-rose-500/30 flex items-center justify-between shadow-[0_0_15px_rgba(244,63,94,0.15)]">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-rose-500 animate-pulse shadow-[0_0_10px_#f43f5e] shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-rose-200 font-bold">≤ 75.0%</span>
+<span class="font-body-sm text-body-sm text-rose-300/80">Debarment Risk • Medical/Duty Slip Needed</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-rose-600 text-white font-label-sm text-label-sm font-extrabold uppercase shadow-[0_0_10px_rgba(244,63,94,0.6)]">🚨 Danger</span>
+</div>
+</div>
+</div>
+<!-- Subject-Wise Granular Breakdown Cards in Dark Diagnostic Theme -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between px-0.5">
+<h2 class="font-title-md text-title-md text-slate-100 font-bold">Subject-Wise Diagnostics</h2>
+<span class="font-label-sm text-label-sm text-slate-400 font-mono">4 Enrolled</span>
+</div>
+<!-- 1. Data Structures (92.5% - Safe) -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden backdrop-blur-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-emerald-400 shadow-[0_0_10px_#34d399]"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-slate-400 font-mono">CS-401</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="font-label-sm text-label-sm text-emerald-400 font-medium">Lecture Hall 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-100 font-bold">Data Structures</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Good
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-slate-400">37 of 40 sessions attended</span>
+<span class="font-title-md text-title-md text-emerald-400 font-bold drop-shadow-[0_0_8px_rgba(52,211,153,0.4)]">92.5%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden ml-1 border border-slate-700/60">
+<div class="bg-emerald-400 h-full rounded-full transition-all duration-700 shadow-[0_0_8px_#34d399]" style="width: 92.5%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-slate-400 pl-1">
+<span class="font-body-sm text-body-sm">Can safely skip 3 future classes</span>
+<span class="font-label-sm text-label-sm text-emerald-400 font-semibold">Safe Zone</span>
+</div>
+</div>
+<!-- 2. Computer Networks (83.3% - Warning) -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden backdrop-blur-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-400 shadow-[0_0_10px_#fbbf24]"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-slate-400 font-mono">CS-403</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="font-label-sm text-label-sm text-slate-400 font-medium">Turing Lab</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-100 font-bold">Computer Networks</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Warning
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-slate-400">25 of 30 sessions attended</span>
+<span class="font-title-md text-title-md text-amber-400 font-bold drop-shadow-[0_0_8px_rgba(251,191,36,0.4)]">83.3%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden ml-1 border border-slate-700/60">
+<div class="bg-amber-400 h-full rounded-full transition-all duration-700 shadow-[0_0_8px_#fbbf24]" style="width: 83.3%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-slate-400 pl-1">
+<span class="font-body-sm text-body-sm">Can skip 1 class before dipping sub-80%</span>
+<span class="font-label-sm text-label-sm text-amber-400 font-semibold">Buffer Tight</span>
+</div>
+</div>
+<!-- 3. Database Systems (78.0% - Critical) -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden backdrop-blur-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-rose-400 shadow-[0_0_10px_#f43f5e]"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-slate-400 font-mono">CS-405</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="font-label-sm text-label-sm text-slate-400 font-medium">Seminar Hall B</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-100 font-bold">Database Systems</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-rose-950/80 border border-rose-500/40 text-rose-300 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> Below 80%
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-slate-400">39 of 50 sessions attended</span>
+<span class="font-title-md text-title-md text-rose-400 font-bold drop-shadow-[0_0_8px_rgba(244,63,94,0.4)]">78.0%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden ml-1 border border-slate-700/60">
+<div class="bg-rose-400 h-full rounded-full transition-all duration-700 shadow-[0_0_8px_#f43f5e]" style="width: 78.0%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-slate-400 pl-1">
+<span class="font-body-sm text-body-sm text-rose-300 font-medium">Need 2 straight classes for 80%</span>
+<span class="font-label-sm text-label-sm text-rose-400 font-semibold">Edge Zone</span>
+</div>
+</div>
+<!-- 4. Operating Systems (71.4% - DANGER) -->
+<div class="rounded-xl bg-[#111827]/90 border border-rose-500/40 p-space-md shadow-[0_4px_25px_rgba(244,63,94,0.15)] flex flex-col gap-2 relative overflow-hidden backdrop-blur-sm">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-rose-500 shadow-[0_0_12px_#f43f5e] animate-pulse"></div>
+<div class="flex items-start justify-between pl-1.5">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-rose-400 font-bold font-mono">CS-402</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="font-label-sm text-label-sm text-slate-400 font-medium">Lecture Hall 1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-100 font-extrabold">Operating Systems</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-rose-600 text-white font-label-sm text-label-sm font-extrabold flex items-center gap-1 shadow-[0_0_10px_rgba(244,63,94,0.6)]">
+<span class="material-symbols-outlined text-[14px]">report</span> ≤ 75% Danger
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1.5">
+<span class="font-body-sm text-body-sm text-slate-400">25 of 35 sessions attended</span>
+<span class="font-title-md text-title-md text-rose-400 font-extrabold drop-shadow-[0_0_10px_rgba(244,63,94,0.6)]">71.4%</span>
+</div>
+<div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden ml-1.5 relative border border-slate-700/60">
+<div class="bg-rose-500 h-full rounded-full transition-all duration-700 shadow-[0_0_10px_#f43f5e]" style="width: 71.4%;"></div>
+<!-- 75% marker pin -->
+<div class="absolute top-0 bottom-0 left-[75%] w-0.5 bg-sky-300 shadow-[0_0_6px_#38bdf8]"></div>
+</div>
+<!-- High-Impact Prescription Alert Box -->
+<div class="mt-1 ml-1.5 p-2.5 rounded-lg bg-rose-950/60 border border-rose-500/40 text-rose-200 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-rose-400">priority_high</span>
+<span class="font-label-md text-label-md font-bold text-rose-300">Must attend next 6 classes!</span>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-rose-600 text-white font-label-sm text-label-sm font-semibold hover:bg-rose-500 transition-colors shadow-[0_0_8px_rgba(244,63,94,0.5)]">
+            Remind
+          </button>
+</div>
+</div>
+</div>
+<!-- Term Trajectory / 12-Week Trend Neon-Accented Micro Graph on Dark Grid -->
+<div class="rounded-xl bg-[#111827]/90 border border-slate-800 p-space-md shadow-sm flex flex-col gap-space-sm backdrop-blur-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-title-md text-title-md text-slate-100 font-bold">Semester Trend (Weeks 1 – 12)</h2>
+<span class="font-body-sm text-body-sm text-slate-400">Tracking mandatory 75% baseline evolution</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-1 bg-rose-500 rounded-full shadow-[0_0_6px_#f43f5e]"></span>
+<span class="font-label-sm text-label-sm text-rose-400 font-semibold font-mono">75% Cutoff</span>
+</div>
+</div>
+<!-- Mini Custom Bar Chart Container with Dark Grid Lines -->
+<div class="pt-space-md pb-space-xs flex flex-col relative">
+<!-- Dark Grid Background Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20">
+<div class="w-full border-b border-dashed border-slate-600"></div>
+<div class="w-full border-b border-dashed border-slate-600"></div>
+<div class="w-full border-b border-dashed border-slate-600"></div>
+<div class="w-full border-b border-slate-600"></div>
+</div>
+<!-- Neon SVG threshold guideline representing 75% -->
+<div class="absolute left-0 right-0 top-[35%] h-[1.5px] bg-rose-500/70 shadow-[0_0_8px_rgba(244,63,94,0.6)] pointer-events-none z-10"></div>
+<div class="h-32 flex items-end justify-between gap-1.5 px-1 relative z-0">
+<!-- Week 1: 96% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-emerald-500/80 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(16,185,129,0.3)]" style="height: 96%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W1</span>
+</div>
+<!-- Week 2: 92% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-emerald-500/80 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(16,185,129,0.3)]" style="height: 92%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W2</span>
+</div>
+<!-- Week 3: 88% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-sky-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(56,189,248,0.2)]" style="height: 88%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W3</span>
+</div>
+<!-- Week 4: 85% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-sky-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(56,189,248,0.2)]" style="height: 85%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W4</span>
+</div>
+<!-- Week 5: 82% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-sky-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(56,189,248,0.2)]" style="height: 82%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W5</span>
+</div>
+<!-- Week 6: 79% (Dip below 80%) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-amber-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(245,158,11,0.3)]" style="height: 79%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W6</span>
+</div>
+<!-- Week 7: 81% (Recover) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-sky-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(56,189,248,0.2)]" style="height: 81%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W7</span>
+</div>
+<!-- Week 8: 76% (Festival week dip) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-amber-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(245,158,11,0.3)]" style="height: 76%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W8</span>
+</div>
+<!-- Week 9: 77% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-amber-500/70 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_6px_rgba(245,158,11,0.3)]" style="height: 77%;"></div>
+<span class="font-label-sm text-[9px] text-slate-400 font-mono">W9</span>
+</div>
+<!-- Week 10: 73% (Fell sub 75) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-rose-500 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_8px_rgba(244,63,94,0.5)]" style="height: 73%;"></div>
+<span class="font-label-sm text-[9px] text-rose-400 font-bold font-mono">W10</span>
+</div>
+<!-- Week 11: 72% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-rose-500 rounded-t-sm transition-all duration-300 group-hover:brightness-125 shadow-[0_0_8px_rgba(244,63,94,0.5)]" style="height: 72%;"></div>
+<span class="font-label-sm text-[9px] text-rose-400 font-bold font-mono">W11</span>
+</div>
+<!-- Week 12: 74.2% (Current) -->
+<div class="flex-1 flex flex-col items-center gap-1 group relative">
+<span class="absolute -top-6 text-[10px] font-bold text-rose-300 bg-rose-950/90 border border-rose-500/40 px-1.5 py-0.5 rounded shadow-[0_0_8px_rgba(244,63,94,0.4)]">Now</span>
+<div class="w-full bg-rose-500 rounded-t-sm animate-pulse shadow-[0_0_12px_#f43f5e]" style="height: 74.2%;"></div>
+<span class="font-label-sm text-[9px] text-rose-400 font-extrabold font-mono">W12</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-slate-400 pt-space-xs">
+<span class="font-body-sm text-body-sm">Lowest point: <span class="text-rose-400 font-semibold">72.0% (Week 11)</span></span>
+<button class="font-label-sm text-label-sm text-sky-400 hover:text-sky-300 flex items-center gap-0.5 hover:underline font-medium">
+          View full ledger <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Campus Lifestyle Context / Encouragement Card -->
+<div class="rounded-xl bg-[#111827]/80 border border-slate-800 p-space-md flex items-center gap-space-md backdrop-blur-sm">
+<div class="w-12 h-12 rounded-xl bg-sky-950/80 border border-sky-500/30 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(56,189,248,0.2)]">
+<span class="material-symbols-outlined text-sky-400 text-[24px]">local_hospital</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-slate-100 font-semibold">Have valid absence slips?</span>
+<span class="font-body-sm text-body-sm text-slate-400 mt-0.5">Submit duty or medical certificates to Dean of Student Affairs within 48h to claim exemption.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initAnalyticsInteractions() {
+    const slider = document.getElementById('simSlider');
+    const valueText = document.getElementById('sliderValueText');
+    const feedback = document.getElementById('simFeedback');
+    const syncBtn = document.getElementById('refreshGaugeBtn');
+    const gaugeArc = document.getElementById('gaugeProgressArc');
+
+    if (slider && valueText && feedback) {
+      slider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value, 10);
+        if (val === 0) {
+          valueText.textContent = '0 classes missed';
+          feedback.textContent = 'Safe window: 0 skips remaining';
+          feedback.className = 'text-right font-label-sm text-label-sm text-emerald-400 font-semibold drop-shadow-[0_0_6px_rgba(52,211,153,0.4)]';
+        } else {
+          valueText.textContent = `${val} class${val > 1 ? 'es' : ''} missed`;
+          const newAtt = ((126 / (170 + val)) * 100).toFixed(1);
+          const deficit = (val * 2) + 5;
+          feedback.textContent = `Drops to ${newAtt}%! Need ${deficit} consecutive classes to recover.`;
+          feedback.className = 'text-right font-label-sm text-label-sm text-rose-300 font-bold drop-shadow-[0_0_6px_rgba(244,63,94,0.5)]';
+        }
+      });
+    }
+
+    if (syncBtn && gaugeArc) {
+      syncBtn.addEventListener('click', () => {
+        gaugeArc.style.transition = 'stroke-dashoffset 0.4s ease';
+        gaugeArc.setAttribute('stroke-dashoffset', '427');
+        syncBtn.classList.add('animate-spin');
+        
+        setTimeout(() => {
+          gaugeArc.style.transition = 'stroke-dashoffset 1s ease-out';
+          gaugeArc.setAttribute('stroke-dashoffset', '110');
+          syncBtn.classList.remove('animate-spin');
+        }, 350);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#0B0F19]/90 backdrop-blur-xl border-t border-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]" data-active-classes="bg-sky-500/20 text-sky-300 font-semibold shadow-sm border border-sky-500/40"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-slate-400 hover:text-slate-200 transition-all gap-0.5" data-path="timetable" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm">Timetable</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl transition-all gap-0.5 bg-sky-500/20 text-sky-300 font-semibold shadow-[0_0_12px_rgba(56,189,248,0.25)] border border-sky-500/40" data-path="analytics" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm">Analytics</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-slate-400 hover:text-slate-200 transition-all gap-0.5" data-path="subjects" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Subjects</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-slate-400 hover:text-slate-200 transition-all gap-0.5" data-path="history-logs" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-sm text-label-sm">Logs</span></a></div></nav></body></html>

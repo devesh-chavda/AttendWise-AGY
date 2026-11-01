@@ -1,0 +1,100 @@
+[
+  {
+    "index": 1,
+    "id": "e97c1569ee9140f1acebd467622dba22",
+    "title": "Attendance History & Log",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\01_Attendance_History__Log.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\01_Attendance_History__Log.png"
+  },
+  {
+    "index": 2,
+    "id": "94361225ce1f4f4e9404cb48b6898910",
+    "title": "Attendance Analytics & Risk Alert",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\02_Attendance_Analytics__Risk_Alert.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\02_Attendance_Analytics__Risk_Alert.png"
+  },
+  {
+    "index": 3,
+    "id": "f470c4e37604439d90becc1b1ef099e7",
+    "title": "Subjects & Fixed Schedule",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\03_Subjects__Fixed_Schedule.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\03_Subjects__Fixed_Schedule.png"
+  },
+  {
+    "index": 4,
+    "id": "24a94102ceab436191bec78ef42bc677",
+    "title": "Weekly Timetable & Attendance",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\04_Weekly_Timetable__Attendance.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\04_Weekly_Timetable__Attendance.png"
+  },
+  {
+    "index": 5,
+    "id": "740e69e496794431be8b6a930fd5e849",
+    "title": "Subjects & Fixed Schedule (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\05_Subjects__Fixed_Schedule_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\05_Subjects__Fixed_Schedule_Dark_Mode.png"
+  },
+  {
+    "index": 6,
+    "id": "700d8c8c18b04a9093d5a54fa0bafbc8",
+    "title": "Attendance Analytics & Risk Alert (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\06_Attendance_Analytics__Risk_Alert_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\06_Attendance_Analytics__Risk_Alert_Dark_Mode.png"
+  },
+  {
+    "index": 7,
+    "id": "61b9ef2554984a0b82e361b5174679d2",
+    "title": "Weekly Timetable & Attendance (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\07_Weekly_Timetable__Attendance_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\07_Weekly_Timetable__Attendance_Dark_Mode.png"
+  },
+  {
+    "index": 8,
+    "id": "89484d6ea49b4b3696f0c021cfd0b687",
+    "title": "Attendance History & Log (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\08_Attendance_History__Log_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\08_Attendance_History__Log_Dark_Mode.png"
+  },
+  {
+    "index": 9,
+    "id": "fcd42f31489b484b9f6b35348f353eda",
+    "title": "Add Subject & Course Schedule",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\09_Add_Subject__Course_Schedule.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\09_Add_Subject__Course_Schedule.png"
+  },
+  {
+    "index": 10,
+    "id": "6658e8aedf074994a97fb2ad50300e31",
+    "title": "Single Day Schedule View",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\10_Single_Day_Schedule_View.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\10_Single_Day_Schedule_View.png"
+  },
+  {
+    "index": 11,
+    "id": "b0a1df67f256494ab9b9ac9bb0d40a70",
+    "title": "Full Week Calendar View",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\11_Full_Week_Calendar_View.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\11_Full_Week_Calendar_View.png"
+  },
+  {
+    "index": 12,
+    "id": "ae88b352feb445b5b2c76abda94ee338",
+    "title": "Full Week Calendar View (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\12_Full_Week_Calendar_View_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\12_Full_Week_Calendar_View_Dark_Mode.png"
+  },
+  {
+    "index": 13,
+    "id": "5966f4f397b947d8b0db7bcac815ede8",
+    "title": "Startup & Google SSO Login",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\13_Startup__Google_SSO_Login.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\13_Startup__Google_SSO_Login.png"
+  },
+  {
+    "index": 14,
+    "id": "f6f0c6092663467e8a0383c98748a9d1",
+    "title": "Startup & Google SSO Login (Dark Mode)",
+    "html_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\html\\14_Startup__Google_SSO_Login_Dark_Mode.html",
+    "image_path": "c:\\Agy\\College attendance app AGY\\stitch_screens\\images\\14_Startup__Google_SSO_Login_Dark_Mode.png"
+  }
+]

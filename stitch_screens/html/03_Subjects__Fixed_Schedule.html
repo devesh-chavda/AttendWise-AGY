@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#b6c4ff", "error-container": "#ffdad6", "on-secondary-fixed": "#002114", "primary-fixed-dim": "#b6c4ff", "surface-container-high": "#dce9ff", "secondary-fixed-dim": "#68dba9", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "secondary": "#006c4a", "surface-container": "#e5eeff", "on-tertiary-fixed": "#2f1500", "primary-container": "#1e3a8a", "on-tertiary-container": "#fc922b", "surface-container-low": "#eff4ff", "tertiary-fixed-dim": "#ffb77d", "tertiary-container": "#653400", "primary-fixed": "#dce1ff", "on-tertiary": "#ffffff", "outline-variant": "#c5c5d3", "secondary-container": "#82f5c1", "tertiary-fixed": "#ffdcc3", "on-tertiary-fixed-variant": "#6e3900", "inverse-surface": "#213145", "on-primary-container": "#90a8ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "background": "#f8f9ff", "on-secondary-container": "#00714e", "on-primary-fixed-variant": "#264191", "surface-bright": "#f8f9ff", "on-secondary-fixed-variant": "#005137", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-background": "#0b1c30", "primary": "#00236f", "surface-tint": "#4059aa", "on-primary-fixed": "#00164e", "surface-variant": "#d3e4fe", "on-surface": "#0b1c30", "secondary-fixed": "#85f8c4", "outline": "#757682", "error": "#ba1a1a", "on-surface-variant": "#444651", "on-error-container": "#93000a", "inverse-on-surface": "#eaf1ff", "on-primary": "#ffffff", "tertiary": "#442100" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-md": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem" }, fontFamily: { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "data-metric": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "data-metric": ["28px", { "lineHeight": "32px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="AttendWise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XAnpTz4Ts9v41ttplWxhVi8MDpfhHmjTqmYosjj2MXRMjARrrjCKMMkUaa_icvJ7yofG6Fxa2G1nkoRlx1fKs_B0Zr7DQK5uFS7JkKGFtOxX0QQQVyQ33FdKmwCK0Y93YTBB_TjoOgq4wkP_YB15XNGxwt0ernoJtgyPk33-XX4JoUNDMUp85qQ1Qw28FAk-aA32ZEh1Qfj83iwqIwvP0EI0UUubp-dTBPTKwiC4MB"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-none">AttendWise</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5">Subjects</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-primary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm whitespace-nowrap">Sem 4 • Fall 2024</span></div><button aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full hover:bg-surface-container transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqxeLWuPyYuZqwHW1xy7ugSXAjMbORpHkXs0wgVChAkOCjf720I-bfCWHXXJ5wNq3x77STQFoiXRo1_qpUrlE6b4K0rjgCXHF7x357hL3sGPVRbpFe18YvvJA1-WTy8yIufE6YFkfgs53ZokhjyiAqeSo-9Q7JILZisD27xXD-DsP2OuZuCcMro4_YZH3nl0ZC1CuW16jtUZ6lE2UVZsJNw6t3LR7y55p6NT5260I"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Courses &amp; Faculty</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 Enrolled Subjects • Spring Term 2025</p>
+</div>
+<button aria-label="Export Attendance Sheet" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors active:scale-95 shadow-sm" id="exportBtn">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span class="font-label-sm text-label-sm whitespace-nowrap">Export PDF</span>
+</button>
+</div>
+<!-- Search Input -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant placeholder:font-normal focus:outline-none focus:bg-surface-container-low shadow-sm transition-all" id="subjectSearch" placeholder="Search by subject, code, or professor..." type="text"/>
+</div>
+<!-- Filter Pills Group -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<button class="filter-status-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm shrink-0 transition-transform active:scale-95" data-status="all">All Status</button>
+<button class="filter-status-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shrink-0 transition-colors active:scale-95 flex items-center gap-1" data-status="safe">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>Safe (≥90%)
+        </button>
+<button class="filter-status-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shrink-0 transition-colors active:scale-95 flex items-center gap-1" data-status="warning">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>Warning (80-89%)
+        </button>
+<button class="filter-status-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shrink-0 transition-colors active:scale-95 flex items-center gap-1" data-status="critical">
+<span class="w-2 h-2 rounded-full bg-error"></span>At Risk (≤79%)
+        </button>
+<button class="filter-status-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shrink-0 transition-colors active:scale-95 flex items-center gap-1" data-status="danger">
+<span class="w-2 h-2 rounded-full bg-error-container text-on-error-container"></span>Danger Floor
+        </button>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar text-on-surface-variant">
+<span class="font-label-sm text-label-sm shrink-0 px-1 font-semibold text-primary">Day:</span>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-high text-primary font-bold shrink-0" data-day="all">Any Day</button>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant shrink-0" data-day="Mon">Mon</button>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant shrink-0" data-day="Tue">Tue</button>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant shrink-0" data-day="Wed">Wed</button>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant shrink-0" data-day="Thu">Thu</button>
+<button class="filter-day-btn px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant shrink-0" data-day="Fri">Fri</button>
+</div>
+</div>
+</div>
+<!-- Cards List -->
+<div class="px-margin flex flex-col gap-space-md pb-space-xl" id="cardsContainer">
+<!-- Card 1: Data Structures & Algorithms -->
+<div class="subject-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm cursor-pointer active:scale-[0.99] transition-transform" data-attended="37" data-code="CS-210" data-days="Mon Wed Fri" data-dept="Computer Science" data-email="thorne.a@university.edu" data-faculty="Dr. Aris Thorne" data-location="CS-302 / CS-Lab 1" data-margin="You can safely miss up to 5 more classes." data-name="Data Structures &amp; Algorithms" data-office="Mon &amp; Thu 02:00 PM - 04:00 PM (Hall C-12)" data-percentage="92.5" data-status="safe" data-total="40" style="">
+<!-- Status Ribbon Left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold">CS-210</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dept of CS</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-background mt-1">Data Structures &amp; Algorithms</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dr. Aris Thorne • 4 Credits</span>
+</div>
+<!-- Safe Badge -->
+<div class="flex flex-col items-end">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-bold">92.5%</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5">Safe (37/40)</span>
+</div>
+</div>
+<!-- Schedule Pills -->
+<div class="pl-1 pt-1 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Weekly Sessions</span>
+<div class="flex flex-wrap gap-1.5">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Mon</span> 09:00 AM • CS-302
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Wed</span> 09:00 AM • CS-302
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Fri</span> 11:30 AM • CS-Lab 1
+          </div>
+</div>
+</div>
+<!-- Footer Micro-data -->
+<div class="pl-1 pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">meeting_room</span>
+<span>Room CS-302</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span>Tap for details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Operating Systems (DANGER) -->
+<div class="subject-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm cursor-pointer active:scale-[0.99] transition-transform" data-attended="25" data-code="CS-240" data-days="Tue Wed Thu" data-dept="Computer Science" data-email="vance.e@university.edu" data-faculty="Prof. Elena Vance" data-location="CS-201" data-margin="CRITICAL: Must attend the next 4 consecutive lectures to cross 75%!" data-name="Operating Systems" data-office="Tue 03:00 PM - 05:00 PM (Science Tower 4B)" data-percentage="71.4" data-status="danger" data-total="35" style="">
+<!-- Status Ribbon Left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold">CS-240</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dept of CS</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-background mt-1">Operating Systems</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prof. Elena Vance • 4 Credits</span>
+</div>
+<!-- Danger Badge -->
+<div class="flex flex-col items-end">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error text-on-error animate-pulse">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span class="font-label-md text-label-md font-bold">71.4%</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium mt-0.5">Below 75% Floor!</span>
+</div>
+</div>
+<!-- Schedule Pills -->
+<div class="pl-1 pt-1 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Weekly Sessions</span>
+<div class="flex flex-wrap gap-1.5">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Tue</span> 10:30 AM • CS-201
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Wed</span> 02:30 PM • CS-201
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Thu</span> 09:00 AM • CS-201
+          </div>
+</div>
+</div>
+<!-- Danger Bunk Margin Button Callout -->
+<div class="pl-1 pt-2 flex items-center justify-between gap-space-sm">
+<button class="bunk-margin-btn flex-1 py-2 px-3 bg-error-container text-on-error-container rounded-xl font-label-sm text-label-sm flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-margin="Attend next 4 classes without absence" data-subject="Operating Systems">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+<span>View Detailed Bunk Margins</span>
+</button>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+<!-- Card 3: Database Management Systems -->
+<div class="subject-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm cursor-pointer active:scale-[0.99] transition-transform" data-attended="39" data-code="CS-330" data-days="Mon Wed" data-dept="Computer Science" data-email="brody.m@university.edu" data-faculty="Dr. Marcus Brody" data-location="B-Lab 4" data-margin="You can only miss 1 more lecture before hitting critical probation." data-name="Database Management Systems" data-office="Wed 01:00 PM - 03:00 PM (Lab Wing Room 12)" data-percentage="78.0" data-status="critical" data-total="50" style="">
+<!-- Status Ribbon Left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold">CS-330</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dept of CS</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-background mt-1">Database Management</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dr. Marcus Brody • 3 Credits</span>
+</div>
+<!-- Critical Badge -->
+<div class="flex flex-col items-end">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md font-bold">78.0%</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium mt-0.5">Critical Buffer</span>
+</div>
+</div>
+<!-- Schedule Pills -->
+<div class="pl-1 pt-1 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Weekly Sessions</span>
+<div class="flex flex-wrap gap-1.5">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Mon</span> 10:30 AM • B-Lab 4
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Wed</span> 10:30 AM • B-Lab 4
+          </div>
+</div>
+</div>
+<!-- Footer Micro-data -->
+<div class="pl-1 pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Room B-Lab 4 (North Wing)</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span>Tap for details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Discrete Mathematics -->
+<div class="subject-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm cursor-pointer active:scale-[0.99] transition-transform" data-attended="43" data-code="MATH-204" data-days="Tue Thu" data-dept="Mathematics" data-email="sterling.j@university.edu" data-faculty="Prof. Julian Sterling" data-location="M-101" data-margin="You can safely miss up to 2 classes to maintain an 80% baseline." data-name="Discrete Mathematics" data-office="Mon &amp; Wed 11:00 AM - 12:30 PM (Math Dept 304)" data-percentage="86.0" data-status="warning" data-total="50" style="">
+<!-- Status Ribbon Left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-on-tertiary-container"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold">MATH-204</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dept of Math</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-background mt-1">Discrete Mathematics</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prof. Julian Sterling • 3 Credits</span>
+</div>
+<!-- Warning Badge -->
+<div class="flex flex-col items-end">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-tertiary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-md text-label-md font-bold">86.0%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant font-medium mt-0.5">Warning (43/50)</span>
+</div>
+</div>
+<!-- Schedule Pills -->
+<div class="pl-1 pt-1 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Weekly Sessions</span>
+<div class="flex flex-wrap gap-1.5">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Tue</span> 01:00 PM • M-101
+          </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="font-bold text-primary">Thu</span> 01:00 PM • M-101
+          </div>
+</div>
+</div>
+<!-- Footer Micro-data -->
+<div class="pl-1 pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Room M-101 (Main Quad)</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span>Tap for details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Modal Sheet -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex-col justify-end" id="detailsModal">
+<div class="bg-surface-container-lowest w-full rounded-t-3xl p-margin-md flex flex-col gap-space-md max-h-[751px] overflow-y-auto shadow-2xl">
+<!-- Top Handle Bar -->
+<div class="w-12 h-1.5 bg-outline-variant/60 rounded-full mx-auto -mt-1 mb-1"></div>
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold" id="modalCode"></span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1" id="modalTitle">Course Title</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalFaculty"></p>
+</div>
+<button aria-label="Close modal" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Attendance Stat Strip -->
+<div class="bg-surface-container-low rounded-2xl p-space-md flex items-center justify-around">
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current</span>
+<span class="font-data-metric text-data-metric text-primary" id="modalPercentage"></span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Attended</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="modalAttended"></span>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Held</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="modalTotal"></span>
+</div>
+</div>
+<!-- Bunk Margin Projection Note -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">tips_and_updates</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-primary">Attendance Policy Projection</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5" id="modalMargin"></p>
+</div>
+</div>
+<!-- Campus Directions & Map Integration -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">navigation</span>
+            Classroom Navigation
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary" id="modalLocationBadge"></span>
+</div>
+<div class="w-full h-36 bg-cover bg-center rounded-xl relative overflow-hidden flex items-end p-2.5 shadow-sm" data-location="Stanford University Science and Engineering Quad" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYcBxg0jXhjOT7NNqORxqhzr7j4a3Y4yaV7hNa33kjKMFLrDhZ3fHAmbXjZhkt7aTpmGQz7YPjEx0oK8np7Tltl5RuhvK05Hlpj60OQsFmiehPNUyRCnKswsiY2stMFkgfWuwT61waC-8kfaBl8FXaDrGPEnDDlaJFyDFrrajvHgNps4qZZlDQ_TAzPsVIQ60VX_qjl8XsBSWDBYdhEIuOuIw_a9Yzg5GiMSDVkmc')">
+<div class="bg-surface/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate" id="modalLocationDetails">Wing CS, 3rd Floor</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline shrink-0" href="#">Open In Campus Map →</a>
+</div>
+</div>
+</div>
+<!-- Faculty Office Hours & Contact -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Professor &amp; Office Hours</span>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Office Hours:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="modalOfficeHours"></span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<a class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm transition-transform active:scale-95 shadow-sm" href="mailto:" id="modalEmailLink">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Send Official Email</span>
+</a>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">event</span>
+<span>Book Appointment</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Action Close -->
+<button class="w-full py-3 bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-lg text-label-lg rounded-xl transition-colors" id="dismissModalBtn">
+        Done
+      </button>
+</div>
+</div>
+<!-- Toast Notification for Export Action -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 transition-all opacity-0 pointer-events-none translate-y-4 z-50" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm">Attendance report compiled. Download starting...</span>
+</div>
+<script>
+    (function() {
+      // Elements
+      const searchInput = document.getElementById('subjectSearch');
+      const statusButtons = document.querySelectorAll('.filter-status-btn');
+      const dayButtons = document.querySelectorAll('.filter-day-btn');
+      const cards = document.querySelectorAll('.subject-card');
+      const modal = document.getElementById('detailsModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const dismissModalBtn = document.getElementById('dismissModalBtn');
+      const exportBtn = document.getElementById('exportBtn');
+      const toast = document.getElementById('toastNotification');
+
+      // Modal elements
+      const modalCode = document.getElementById('modalCode');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalFaculty = document.getElementById('modalFaculty');
+      const modalPercentage = document.getElementById('modalPercentage');
+      const modalAttended = document.getElementById('modalAttended');
+      const modalTotal = document.getElementById('modalTotal');
+      const modalMargin = document.getElementById('modalMargin');
+      const modalLocationBadge = document.getElementById('modalLocationBadge');
+      const modalLocationDetails = document.getElementById('modalLocationDetails');
+      const modalOfficeHours = document.getElementById('modalOfficeHours');
+      const modalEmailLink = document.getElementById('modalEmailLink');
+
+      let currentStatusFilter = 'all';
+      let currentDayFilter = 'all';
+
+      // Filter Logic
+      function applyFilters() {
+        const query = (searchInput.value || '').toLowerCase().trim();
+
+        cards.forEach(card => {
+          const name = card.dataset.name.toLowerCase();
+          const code = card.dataset.code.toLowerCase();
+          const faculty = card.dataset.faculty.toLowerCase();
+          const status = card.dataset.status;
+          const days = card.dataset.days;
+
+          const matchesSearch = !query || name.includes(query) || code.includes(query) || faculty.includes(query);
+          const matchesStatus = (currentStatusFilter === 'all') || (status === currentStatusFilter);
+          const matchesDay = (currentDayFilter === 'all') || days.includes(currentDayFilter);
+
+          if (matchesSearch && matchesStatus && matchesDay) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // Status Pill Click
+      statusButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          statusButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+          currentStatusFilter = btn.dataset.status;
+          applyFilters();
+        });
+      });
+
+      // Day Pill Click
+      dayButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          dayButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-high', 'text-primary', 'font-bold');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-high', 'text-primary', 'font-bold');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+          currentDayFilter = btn.dataset.day;
+          applyFilters();
+        });
+      });
+
+      // Search input change
+      searchInput.addEventListener('input', applyFilters);
+
+      // Open Modal on Card Click
+      cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          // If tapped directly on bunk margin button, still show sheet focused on margins
+          modalCode.textContent = card.dataset.code;
+          modalTitle.textContent = card.dataset.name;
+          modalFaculty.textContent = `${card.dataset.faculty} • ${card.dataset.dept}`;
+          modalPercentage.textContent = `${card.dataset.percentage}%`;
+          modalAttended.textContent = card.dataset.attended;
+          modalTotal.textContent = card.dataset.total;
+          modalMargin.textContent = card.dataset.margin;
+          modalLocationBadge.textContent = card.dataset.location;
+          modalLocationDetails.textContent = `Room: ${card.dataset.location}`;
+          modalOfficeHours.textContent = card.dataset.office;
+          modalEmailLink.href = `mailto:${card.dataset.email}?subject=Inquiry: ${encodeURIComponent(card.dataset.name)}`;
+
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      });
+
+      // Close Modal
+      function hideModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      closeModalBtn.addEventListener('click', hideModal);
+      dismissModalBtn.addEventListener('click', hideModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) hideModal();
+      });
+
+      // Export PDF micro-interaction toast
+      exportBtn.addEventListener('click', () => {
+        toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+        }, 3200);
+      });
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="timetable" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm">Timetable</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="analytics" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm">Analytics</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl transition-all gap-0.5 bg-primary-container text-on-primary font-semibold shadow-sm" data-path="subjects" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Subjects</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="history-logs" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-sm text-label-sm">Logs</span></a></div></nav></body></html>

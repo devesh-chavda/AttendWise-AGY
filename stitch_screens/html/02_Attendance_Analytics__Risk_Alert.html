@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#b6c4ff", "error-container": "#ffdad6", "on-secondary-fixed": "#002114", "primary-fixed-dim": "#b6c4ff", "surface-container-high": "#dce9ff", "secondary-fixed-dim": "#68dba9", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "secondary": "#006c4a", "surface-container": "#e5eeff", "on-tertiary-fixed": "#2f1500", "primary-container": "#1e3a8a", "on-tertiary-container": "#fc922b", "surface-container-low": "#eff4ff", "tertiary-fixed-dim": "#ffb77d", "tertiary-container": "#653400", "primary-fixed": "#dce1ff", "on-tertiary": "#ffffff", "outline-variant": "#c5c5d3", "secondary-container": "#82f5c1", "tertiary-fixed": "#ffdcc3", "on-tertiary-fixed-variant": "#6e3900", "inverse-surface": "#213145", "on-primary-container": "#90a8ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "background": "#f8f9ff", "on-secondary-container": "#00714e", "on-primary-fixed-variant": "#264191", "surface-bright": "#f8f9ff", "on-secondary-fixed-variant": "#005137", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-background": "#0b1c30", "primary": "#00236f", "surface-tint": "#4059aa", "on-primary-fixed": "#00164e", "surface-variant": "#d3e4fe", "on-surface": "#0b1c30", "secondary-fixed": "#85f8c4", "outline": "#757682", "error": "#ba1a1a", "on-surface-variant": "#444651", "on-error-container": "#93000a", "inverse-on-surface": "#eaf1ff", "on-primary": "#ffffff", "tertiary": "#442100" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-md": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem" }, fontFamily: { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "data-metric": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "data-metric": ["28px", { "lineHeight": "32px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="AttendWise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XAnpTz4Ts9v41ttplWxhVi8MDpfhHmjTqmYosjj2MXRMjARrrjCKMMkUaa_icvJ7yofG6Fxa2G1nkoRlx1fKs_B0Zr7DQK5uFS7JkKGFtOxX0QQQVyQ33FdKmwCK0Y93YTBB_TjoOgq4wkP_YB15XNGxwt0ernoJtgyPk33-XX4JoUNDMUp85qQ1Qw28FAk-aA32ZEh1Qfj83iwqIwvP0EI0UUubp-dTBPTKwiC4MB"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-none">AttendWise</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5">Analytics</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-primary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm whitespace-nowrap">Sem 4 • Fall 2024</span></div><button aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full hover:bg-surface-container transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqxeLWuPyYuZqwHW1xy7ugSXAjMbORpHkXs0wgVChAkOCjf720I-bfCWHXXJ5wNq3x77STQFoiXRo1_qpUrlE6b4K0rjgCXHF7x357hL3sGPVRbpFe18YvvJA1-WTy8yIufE6YFkfgs53ZokhjyiAqeSo-9Q7JILZisD27xXD-DsP2OuZuCcMro4_YZH3nl0ZC1CuW16jtUZ6lE2UVZsJNw6t3LR7y55p6NT5260I"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive & Alert Hero Section -->
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Urgent Floating Status Alert Banner -->
+<div class="relative overflow-hidden rounded-xl bg-error text-on-error p-space-md shadow-lg flex items-start gap-space-sm">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-white/10 pointer-events-none"></div>
+<span class="material-symbols-outlined text-[28px] shrink-0 animate-bounce" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm tracking-tight font-extrabold uppercase">Debarment Risk</span>
+<span class="px-1.5 py-0.5 rounded-full bg-white text-error font-label-sm text-label-sm font-bold uppercase tracking-wider animate-pulse">Action Required</span>
+</div>
+<p class="font-body-md text-body-md mt-0.5 leading-snug font-medium text-error-container">
+          74.2% Attendance (Below 75% Statutory Limit) — Hall ticket holds will trigger in 4 days!
+        </p>
+</div>
+</div>
+<!-- Main Gauge Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col items-center relative overflow-hidden">
+<div class="w-full flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-lg text-label-lg text-on-surface">Term Aggregate</span>
+</div>
+<button aria-label="Refresh Metric" class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded-lg bg-surface-container-low" id="refreshGaugeBtn">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="font-label-sm text-label-sm">Live Sync</span>
+</button>
+</div>
+<!-- Circular SVG Radial Gauge -->
+<div class="relative flex items-center justify-center my-space-md">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 160 160">
+<!-- Background track -->
+<circle class="text-surface-container-high" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="12"></circle>
+<!-- 75% Benchmark marker tick (270 degrees equivalent arc) -->
+<circle class="text-outline z-10" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-dasharray="2 425" stroke-dashoffset="-320" stroke-width="12"></circle>
+<!-- Animated Danger progress arc: 74.2% = 0.742 * (2 * PI * 68) = 317 dashlength out of 427 -->
+<circle class="text-error transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" id="gaugeProgressArc" r="68" stroke="currentColor" stroke-dasharray="427" stroke-dashoffset="110" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-data-metric text-data-metric text-error tracking-tight">74.2%</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-error-container bg-error-container px-2 py-0.5 rounded-full mt-0.5">Critical Sub-Floor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">126 of 170 Attended</span>
+</div>
+</div>
+<!-- Quick Context Micro Pills -->
+<div class="w-full grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="rounded-lg bg-surface-container-low p-2.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">cancel_presentation</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unexcused Misses</span>
+<span class="font-title-md text-title-md text-on-surface leading-tight">44 Sessions</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-2.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">flag</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">75% Target Deficit</span>
+<span class="font-title-md text-title-md text-error leading-tight">-2 Lectures</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Smart Bunk / Target Calculator Predictor (Moment of Delight) -->
+<div class="rounded-xl bg-primary text-on-primary p-space-md shadow-md relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">calculate</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-primary">Attendance Predictor</h2>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Recovery strategy simulation</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">High Priority</span>
+</div>
+<div class="mt-space-md p-space-sm rounded-lg bg-primary-container/80 flex items-center gap-space-md">
+<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-white text-primary shrink-0 shadow-sm">
+<span class="font-data-metric text-data-metric leading-none text-primary">5</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-white">Attend next 5 consecutive lectures</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim mt-0.5">Will safely raise total to <strong>75.6%</strong> before end-term audits. Zero bunks permissible!</span>
+</div>
+</div>
+<!-- Interactive Simulation Slider -->
+<div class="mt-space-md flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-primary-fixed-dim font-label-sm text-label-sm">
+<span>Simulate skipping next lectures:</span>
+<span class="font-bold text-white" id="sliderValueText">0 classes missed</span>
+</div>
+<input class="w-full accent-secondary-fixed cursor-pointer h-2 bg-primary-container rounded-lg" id="simSlider" max="4" min="0" step="1" type="range" value="0"/>
+<div class="text-right font-label-sm text-label-sm text-secondary-fixed font-semibold" id="simFeedback">
+          Safe window: 0 skips remaining
+        </div>
+</div>
+</div>
+<!-- Attendance Policy Criteria Matrix (Visual Tiers Reference) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface text-[20px]">policy</span>
+<h2 class="font-title-md text-title-md text-on-surface">Institutional Thresholds</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Regulation 14.B</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<!-- 90 - 100% -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">90% – 100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Safe &amp; Distinction Qualified</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Good</span>
+</div>
+<!-- 80 - 89.9% -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">80% – 89.9%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Warning • Mild Buffer Zone</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">Buffer Zone</span>
+</div>
+<!-- 75.1 - 79.9% -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">75.1% – 79.9%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Critical • Below 80% Advisory</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Critical</span>
+</div>
+<!-- <= 75% -->
+<div class="p-2.5 rounded-lg bg-error-container/60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error animate-pulse shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-error-container font-bold">≤ 75.0%</span>
+<span class="font-body-sm text-body-sm text-on-error-container">Debarment Risk • Medical/Duty Slip Needed</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-extrabold uppercase">🚨 Danger</span>
+</div>
+</div>
+</div>
+<!-- Subject-Wise Granular Breakdown Cards -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between px-0.5">
+<h2 class="font-title-md text-title-md text-on-surface">Subject-Wise Diagnostics</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Enrolled</span>
+</div>
+<!-- 1. Data Structures (92.5% - Safe) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CS-401</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Lecture Hall 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Data Structures</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Good
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">37 of 40 sessions attended</span>
+<span class="font-title-md text-title-md text-secondary font-bold">92.5%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden ml-1">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 92.5%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant pl-1">
+<span class="font-body-sm text-body-sm">Can safely skip 3 future classes</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Safe Zone</span>
+</div>
+</div>
+<!-- 2. Computer Networks (83.3% - Warning) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-on-tertiary-container"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CS-403</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Turing Lab</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Computer Networks</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Warning
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">25 of 30 sessions attended</span>
+<span class="font-title-md text-title-md text-on-tertiary-container font-bold">83.3%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden ml-1">
+<div class="bg-on-tertiary-container h-full rounded-full transition-all duration-700" style="width: 83.3%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant pl-1">
+<span class="font-body-sm text-body-sm">Can skip 1 class before dipping sub-80%</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Buffer Tight</span>
+</div>
+</div>
+<!-- 3. Database Systems (78.0% - Critical) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-2 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between pl-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CS-405</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Seminar Hall B</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Database Systems</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> Below 80%
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">39 of 50 sessions attended</span>
+<span class="font-title-md text-title-md text-error font-bold">78.0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden ml-1">
+<div class="bg-error h-full rounded-full transition-all duration-700" style="width: 78.0%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant pl-1">
+<span class="font-body-sm text-body-sm text-error font-medium">Need 2 straight classes for 80%</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Edge Zone</span>
+</div>
+</div>
+<!-- 4. Operating Systems (71.4% - DANGER) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-2 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-error animate-pulse"></div>
+<div class="flex items-start justify-between pl-1.5">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-error font-bold">CS-402</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lecture Hall 1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Operating Systems</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm font-extrabold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">report</span> ≤ 75% Danger
+          </span>
+</div>
+<div class="flex justify-between items-baseline mt-1 pl-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">25 of 35 sessions attended</span>
+<span class="font-title-md text-title-md text-error font-extrabold">71.4%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden ml-1.5 relative">
+<div class="bg-error h-full rounded-full transition-all duration-700" style="width: 71.4%;"></div>
+<!-- 75% marker pin -->
+<div class="absolute top-0 bottom-0 left-[75%] w-0.5 bg-on-surface"></div>
+</div>
+<!-- High-Impact Prescription Alert Box -->
+<div class="mt-1 ml-1.5 p-2.5 rounded-lg bg-error-container text-on-error-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-error">priority_high</span>
+<span class="font-label-md text-label-md font-bold text-error">Must attend next 6 classes!</span>
+</div>
+<button class="px-2 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold hover:opacity-95 transition-opacity">
+            Remind
+          </button>
+</div>
+</div>
+</div>
+<!-- Term Trajectory / 12-Week Trend Micro Graph -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-title-md text-title-md text-on-surface">Semester Trend (Weeks 1 – 12)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tracking mandatory 75% baseline evolution</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-0.5 bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-semibold">75% Cutoff</span>
+</div>
+</div>
+<!-- Mini Custom Bar Chart Container -->
+<div class="pt-space-md pb-space-xs flex flex-col relative">
+<!-- SVG threshold guideline representing 75% -->
+<div class="absolute left-0 right-0 top-[35%] h-[1px] bg-error/40 pointer-events-none z-10"></div>
+<div class="h-32 flex items-end justify-between gap-1.5 px-1 relative z-0">
+<!-- Week 1: 96% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-secondary-container rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 96%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W1</span>
+</div>
+<!-- Week 2: 92% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-secondary-container rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 92%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W2</span>
+</div>
+<!-- Week 3: 88% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-surface-container-high rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 88%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W3</span>
+</div>
+<!-- Week 4: 85% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-surface-container-high rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 85%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W4</span>
+</div>
+<!-- Week 5: 82% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-surface-container-high rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 82%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W5</span>
+</div>
+<!-- Week 6: 79% (Dip below 80%) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-error-container rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 79%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W6</span>
+</div>
+<!-- Week 7: 81% (Recover) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-surface-container-high rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 81%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W7</span>
+</div>
+<!-- Week 8: 76% (Festival week dip) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-error-container rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 76%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W8</span>
+</div>
+<!-- Week 9: 77% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-error-container rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 77%;"></div>
+<span class="font-label-sm text-[9px] text-on-surface-variant">W9</span>
+</div>
+<!-- Week 10: 73% (Fell sub 75) -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-error rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 73%;"></div>
+<span class="font-label-sm text-[9px] text-error font-bold">W10</span>
+</div>
+<!-- Week 11: 72% -->
+<div class="flex-1 flex flex-col items-center gap-1 group">
+<div class="w-full bg-error rounded-t-sm transition-all duration-300 group-hover:opacity-80" style="height: 72%;"></div>
+<span class="font-label-sm text-[9px] text-error font-bold">W11</span>
+</div>
+<!-- Week 12: 74.2% (Current) -->
+<div class="flex-1 flex flex-col items-center gap-1 group relative">
+<span class="absolute -top-6 text-[10px] font-bold text-error bg-surface-container px-1 rounded shadow-xs">Now</span>
+<div class="w-full bg-error rounded-t-sm animate-pulse" style="height: 74.2%;"></div>
+<span class="font-label-sm text-[9px] text-error font-extrabold">W12</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-space-xs">
+<span class="font-body-sm text-body-sm">Lowest point: 72.0% (Week 11)</span>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 hover:underline">
+          View full ledger <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Campus Lifestyle Context / Encouragement Card -->
+<div class="rounded-xl bg-surface-container-high/60 p-space-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">local_hospital</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Have valid absence slips?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Submit duty or medical certificates to Dean of Student Affairs within 48h to claim exemption.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initAnalyticsInteractions() {
+    const slider = document.getElementById('simSlider');
+    const valueText = document.getElementById('sliderValueText');
+    const feedback = document.getElementById('simFeedback');
+    const syncBtn = document.getElementById('refreshGaugeBtn');
+    const gaugeArc = document.getElementById('gaugeProgressArc');
+
+    if (slider && valueText && feedback) {
+      slider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value, 10);
+        if (val === 0) {
+          valueText.textContent = '0 classes missed';
+          feedback.textContent = 'Safe window: 0 skips remaining';
+          feedback.className = 'text-right font-label-sm text-label-sm text-secondary-fixed font-semibold';
+        } else {
+          valueText.textContent = `${val} class${val > 1 ? 'es' : ''} missed`;
+          const newAtt = ((126 / (170 + val)) * 100).toFixed(1);
+          const deficit = (val * 2) + 5;
+          feedback.textContent = `Drops to ${newAtt}%! Need ${deficit} consecutive classes to recover.`;
+          feedback.className = 'text-right font-label-sm text-label-sm text-error-container font-bold';
+        }
+      });
+    }
+
+    if (syncBtn && gaugeArc) {
+      syncBtn.addEventListener('click', () => {
+        gaugeArc.style.transition = 'stroke-dashoffset 0.4s ease';
+        gaugeArc.setAttribute('stroke-dashoffset', '427');
+        syncBtn.classList.add('animate-spin');
+        
+        setTimeout(() => {
+          gaugeArc.style.transition = 'stroke-dashoffset 1s ease-out';
+          gaugeArc.setAttribute('stroke-dashoffset', '110');
+          syncBtn.classList.remove('animate-spin');
+        }, 350);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="flex justify-around items-center h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="timetable" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm">Timetable</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl transition-all gap-0.5 bg-primary-container text-on-primary font-semibold shadow-sm" data-path="analytics" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm">Analytics</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="subjects" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Subjects</span></a><a class="flex flex-col items-center justify-center min-w-[4.25rem] h-12 px-2.5 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="history-logs" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-sm text-label-sm">Logs</span></a></div></nav></body></html>
